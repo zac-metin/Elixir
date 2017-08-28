@@ -32,3 +32,11 @@ import Kernel, except: [inspect: 1]
     puts "Ending Output"
   end
 end
+
+# Functions
+
+Elixir allows anonymous functions
+
+Functions defined in a module are available to other modules to use.
+
+One line functions can be shortened with do: and they don't need an end.
