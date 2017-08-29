@@ -99,3 +99,13 @@ defp instead of def
 defp trace(string) do
   IO.puts("The value passed in was #{string}")
 end
+
+# Anonymous Functions
+
+list = [1,2,3,4] // in iex
+
+Enum.map(list, fn(x) -> x*x end)
+
+def custom_func(a,f) do
+  f.(a)   //needs the dot because you're calling an anonymous function
+end
