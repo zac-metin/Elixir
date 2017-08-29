@@ -91,3 +91,11 @@ Most operators are available in guard clauses
 
 def add(list, val \\ 0) do - this means that if no value is specified, the value is 0
 [val | list]  
+
+# Private Functions
+
+defp instead of def
+
+defp trace(string) do
+  IO.puts("The value passed in was #{string}")
+end
