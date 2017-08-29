@@ -62,3 +62,18 @@ Functions arity:
 function name + / {number of parameters}
 
 eg: first/1
+
+# Pattern Matching
+
+defmodule Sample.Enum do
+  def first([head | tail]) do
+    head
+  end
+end
+
+Is the same as the example above.
+
+defmodule Sample.Enum do
+  def first([]) do: nil
+  def first([head | tail]) do: head
+end
