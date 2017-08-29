@@ -77,3 +77,17 @@ defmodule Sample.Enum do
   def first([]) do: nil
   def first([head | tail]) do: head
 end
+
+# Guard Clauses
+
+defmodule Sample.Enum do
+  def first(list) when length(list) ==0, do: nil
+  def first([head | tail]), do: head
+end
+
+Most operators are available in guard clauses
+
+# Default Parameters \\
+
+def add(list, val \\ 0) do - this means that if no value is specified, the value is 0
+[val | list]  
