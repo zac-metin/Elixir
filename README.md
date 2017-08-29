@@ -17,3 +17,6 @@ Steps to Install:
 
 brew update
 brew install elixir
+
+https://elixir-lang.org/learning.html
+epic resources

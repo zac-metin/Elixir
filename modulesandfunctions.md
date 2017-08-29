@@ -33,6 +33,14 @@ import Kernel, except: [inspect: 1]
   end
 end
 
+
+can rename with alias command
+alias ModulePlayground.Misc.Util.Math, as MyMath
+
+require Integer
+
+will bring in macros
+
 # Functions
 
 Elixir allows anonymous functions
@@ -40,3 +48,17 @@ Elixir allows anonymous functions
 Functions defined in a module are available to other modules to use.
 
 One line functions can be shortened with do: and they don't need an end.
+
+defmodule Sample.Enum do
+  def first(list) do
+    hd(list) // gets the hd
+  end
+end
+
+In elixir functions return the last evaluated expression
+
+Functions arity:
+
+function name + / {number of parameters}
+
+eg: first/1
